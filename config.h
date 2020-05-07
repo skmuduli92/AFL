@@ -56,7 +56,7 @@
 
 /* Default memory limit for child process (MB): */
 
-#ifndef __x86_64__ 
+#ifndef __x86_64__
 #  define MEM_LIMIT         25
 #else
 #  define MEM_LIMIT         50
@@ -96,7 +96,7 @@
 #define HAVOC_MIN           16
 
 /* Maximum stacking for havoc-stage tweaks. The actual value is calculated
-   like this: 
+   like this:
 
    n = random between 1 and HAVOC_STACK_POW2
    stacking = 2^n
@@ -272,6 +272,7 @@
 /* Environment variable used to pass SHM ID to the called program. */
 
 #define SHM_ENV_VAR         "__AFL_SHM_ID"
+#define SHM_AFL_N_TEST_PROG 567891
 
 /* Other less interesting, internal-only variables. */
 
